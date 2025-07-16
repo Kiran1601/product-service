@@ -40,9 +40,7 @@ public class ProductController {
 
 	@GetMapping("/product/{productName}")
 	public ProductBasicInfo searchProduct(@PathVariable String productName) {
-
 		return iProductBasicInfo.searchProduct(productName);
-
 	}
 
 }

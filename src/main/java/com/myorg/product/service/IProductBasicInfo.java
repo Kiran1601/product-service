@@ -9,6 +9,7 @@ public interface IProductBasicInfo {
 	List<ProductBasicInfo> getAllProducts();
 	void deleteApplication(String productId);
 
-	ProductBasicInfo searchProduct(String productname);
+	ProductBasicInfo  searchProduct(String productname);
 
+	//ProductBasicInfo searchById(Integer productId);
 }
