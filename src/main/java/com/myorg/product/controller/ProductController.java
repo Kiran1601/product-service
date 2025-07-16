@@ -38,4 +38,11 @@ public class ProductController {
 		return ResponseEntity.ok("Product deleted successfully");
 	}
 
+	@GetMapping("/product/{productName}")
+	public ProductBasicInfo searchProduct(@PathVariable String productName) {
+
+		return iProductBasicInfo.searchProduct(productName);
+
+	}
+
 }

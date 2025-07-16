@@ -6,9 +6,9 @@ import java.util.List;
 public interface IProductBasicInfo {
 
 	public ProductBasicInfo saveProduct(ProductBasicInfo productBasicInfo);
-
 	List<ProductBasicInfo> getAllProducts();
-
 	void deleteApplication(String productId);
+
+	ProductBasicInfo searchProduct(String productname);
 
 }
